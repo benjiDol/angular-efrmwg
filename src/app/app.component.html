@@ -1,4 +1,14 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+<app-measurement-input></app-measurement-input>
+
+<div>
+  <app-measurement-input
+    [(value)]="temperature"
+    [sensor]="name"
+    [(unit)]="unit"
+    [units]="units"
+  ></app-measurement-input>
+</div>
+
+<div>
+  <h5>Der Sensor {{ name }}...</h5>
+</div>
